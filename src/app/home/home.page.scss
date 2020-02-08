@@ -13,10 +13,14 @@ ion-row >div{
   padding: 10px;
 }
 
-ion-card-header > ion-card-title{
+.cardTitle_Subtitle{
   font-weight: bold;
 }
+
+ion-card-header > ion-card-title{
+  @extend .cardTitle_Subtitle;
+}
 ion-card-header > ion-card-subtitle{
-  font-weight: bold;
+  @extend .cardTitle_Subtitle;
 }
 
