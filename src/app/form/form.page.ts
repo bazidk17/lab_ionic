@@ -39,7 +39,7 @@ export class FormPage implements OnInit {
 
     const toast = await this.toastController.create({
       message: 'Form has been cleared.',
-      duration: 1000,
+      duration: 500,
       color: 'dark'
     });
     toast.present();
@@ -48,7 +48,7 @@ export class FormPage implements OnInit {
   async submitToast() {
     const toast = await this.toastController.create({
       message: 'Your form has been submitted.',
-      duration: 1000,
+      duration: 500,
       color: 'dark'
     });
     toast.present();
@@ -56,7 +56,7 @@ export class FormPage implements OnInit {
   async saveToast() {
     const toast = await this.toastController.create({
       message: 'Form details have been saved.',
-      duration: 1000,
+      duration: 500,
       color: 'dark'
     });
     toast.present();
