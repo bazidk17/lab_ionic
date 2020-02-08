@@ -1,0 +1,11 @@
+@mixin background-classic{
+    background-color: #212121;
+}
+
+@mixin background-classic-light {
+    background-color: #4E342E;
+}
+
+.contentColor{
+    @include background-classic-light()
+}

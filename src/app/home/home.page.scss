@@ -1,1 +1,22 @@
 
+
+
+ion-col > div {
+  background-color: #f7f7f7;
+  border: solid 1px #ddd;
+  padding: 10px;
+}
+
+ion-row >div{
+  background-color: #f7f7f7;
+  border: solid 1px #ddd;
+  padding: 10px;
+}
+
+ion-card-header > ion-card-title{
+  font-weight: bold;
+}
+ion-card-header > ion-card-subtitle{
+  font-weight: bold;
+}
+

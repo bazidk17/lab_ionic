@@ -1,0 +1,35 @@
+@import "../app.component.scss";
+
+@mixin display-text {
+  color: #cfd8dc;
+}
+.formItem {
+  @include display-text;
+  font-weight: bold;
+}
+.formItemAnswer {
+  @include display-text;
+  font-style: italic;
+}
+
+.formHeader {
+  color: #fafafa;
+  padding-left: 10px;
+}
+
+.cardAesthetics {
+  @include background-classic;
+}
+
+.contentColor {
+  @include background-classic-light;
+}
+
+.footerCenter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}

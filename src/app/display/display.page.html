@@ -1,0 +1,64 @@
+<ion-header>
+
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="form"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Display</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-card class="cardAesthetics">
+    <ion-card-header>
+      <ion-card-title class="formHeader">
+        {{data.name}}
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+     
+
+        <ion-row>
+          <ion-col>
+            <ion-label class="formItem">Gender:</ion-label>
+          </ion-col>
+          <ion-col>
+            <ion-label class="formItemAnswer">{{data.gender}}</ion-label>
+          </ion-col>
+        </ion-row>
+
+
+
+        <ion-row>
+          <ion-col>
+            <ion-label class="formItem">Birth Date:</ion-label>
+          </ion-col>
+          <ion-col>
+            <ion-label class="formItemAnswer">{{data.dob}}</ion-label>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-label class="formItem">Email:</ion-label>
+          </ion-col>
+          <ion-col>
+            <ion-label class="formItemAnswer">{{data.email}}</ion-label>
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+  
+
+
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+ 
+    <ion-title class="footerCenter" size="small"><app-copyright></app-copyright></ion-title>
+  </ion-toolbar>
+</ion-footer>

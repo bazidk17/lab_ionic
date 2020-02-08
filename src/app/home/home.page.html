@@ -1,14 +1,64 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-title>
-      Ionic Blank
+      Profile UI
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+<ion-content [scrollEvents]="true" (ionScrollStart)="logScrollStart()" (ionScroll)="logScrolling($event)"
+  (ionScrollEnd)="logScrollEnd()">
+  <ion-card>
+    <img src="assets/img_D.jpg" />
+    <ion-card-header>
+
+      <ion-card-title>Disruptor</ion-card-title>
+      <ion-card-subtitle>Range - Intelligence</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col (click)="showSkill1()" col-12 col-sm>
+            <img src="assets/d_skill1.png" />
+          </ion-col>
+          <ion-col (click)="showSkill2()" col-12 col-sm>
+            <img src="assets/d_skill2.png" />
+
+          </ion-col>
+          <ion-col (click)="showSkill3()" col-12 col-sm>
+            <img src="assets/d_skill3.png" />
+
+          </ion-col>
+
+          <ion-col (click)="showSkill4()" col-12 col-sm>
+            <img src="assets/d_skill4.png" />
+
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <div id="skillInformation" style="display:none;" (click)="hideSkillInfo()">asdasd</div>
+        </ion-row>
+      </ion-grid>
+
+      <ion-button expand="block" color="dark" id="btnstory" type="button" (click)="btnShow()">Read Story</ion-button>
+      <br />
+      <div id="divstory" style="display:none">
+        Disruptor, the Stormcrafter, is a ranged intelligence hero who requires good positioning to use his abilities
+        effectively. His signature ability is Kinetic Field, a pseudo-disable that traps enemies within a small area for
+        a long
+        duration. Combined with his Static Storm, Disruptor can act as the initiator for a teamfight, or supplement his
+        teammates' initiation very well. Glimpse is another powerful spell that forces enemies to watch their movements,
+        as
+        Disruptor can easily drag them back to a previous location to be focused down. Thunder Strike provides Disruptor
+        with
+        some reliable single-target damage, but more importantly grants vision on the target to prevent jukes and
+        escapes.
+      </div>
+    </ion-card-content>
+  </ion-card>
+  
 </ion-content>
